@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ambientes Virtuais
+venv/
+.venv/
+env/
+ENV/
+
+# IDEs e Editores
+.vscode/
+.idea/
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db

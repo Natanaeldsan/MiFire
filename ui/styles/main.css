@@ -1,0 +1,392 @@
+/* =========================
+   BASE
+========================= */
+
+.stApp {
+    background: #E7EBF0;
+    color: #1F2933;
+}
+
+.block-container {
+    max-width: 1320px;
+    padding-top: 1.4rem;
+    padding-bottom: 3rem;
+}
+
+header[data-testid="stHeader"] {
+    background: transparent;
+}
+
+#MainMenu,
+footer {
+    visibility: hidden;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+
+section[data-testid="stSidebar"] .brand,
+section[data-testid="stSidebar"] .brand *,
+section[data-testid="stSidebar"] .menu-section,
+section[data-testid="stSidebar"] .sidebar-card,
+section[data-testid="stSidebar"] .sidebar-card *,
+section[data-testid="stSidebar"] .version {
+    color: #E5E7EB;
+}
+section[data-testid="stSidebar"] * {
+    color: #E5E7EB;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0 22px 0;
+    border-bottom: 1px solid #374151;
+    margin-bottom: 18px;
+}
+
+.brand-logo {
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, #E5E7EB, #CBD5E1);
+    color: #1F2933;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    border-radius: 6px;
+    letter-spacing: -1px;
+}
+
+.brand-title {
+    font-size: 21px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+.brand-subtitle {
+    font-size: 11px;
+    color: #AAB2BD;
+}
+
+.menu-section {
+    color: #94A3B8;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 22px;
+    margin-bottom: 8px;
+}
+
+.sidebar-card {
+    background: #252C35;
+    border: 1px solid #3A414C;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 14px;
+}
+
+.sidebar-card-label {
+    color: #94A3B8;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 5px;
+}
+
+.sidebar-card-value {
+    color: #F8FAFC;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.sidebar-bottom {
+    margin-top: 26px;
+    padding-top: 16px;
+    border-top: 1px solid #374151;
+}
+
+.version {
+    color: #94A3B8;
+    font-size: 12px;
+    margin-top: 14px;
+}
+
+/* =========================
+   BOTÕES SIDEBAR
+========================= */
+
+section[data-testid="stSidebar"] div[data-testid="stButton"] {
+    margin-bottom: 6px;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stButton"] button {
+    background: transparent;
+    color: #E5E7EB;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    height: 42px;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: center !important;
+
+    padding-left: 14px !important;
+    text-align: left !important;
+    font-weight: 600;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stButton"] button > div {
+    width: 100%;
+    justify-content: flex-start !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stButton"] button p {
+    width: 100%;
+    text-align: left !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stButton"] button:hover {
+    background: #2F3742;
+    border-color: #4B5563;
+    color: #FFFFFF;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stButton"] button[kind="primary"] {
+    background: #1F4E79;
+    border-color: #1F4E79;
+    color: #FFFFFF;
+    position: relative;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stButton"] button[kind="primary"]::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    bottom: 6px;
+    width: 3px;
+    background: #4EA1FF;
+    border-radius: 2px;
+}
+/* =========================
+   TOPO
+========================= */
+
+.topbar {
+    background: #FFFFFF;
+    border: 1px solid #CCD3DC;
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin-bottom: 18px;
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.breadcrumb {
+    color: #5B6470;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+}
+
+.topbar h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.topbar p {
+    margin: 6px 0 0 0;
+    color: #5B6470;
+    font-size: 14px;
+}
+
+.standard-box {
+    min-width: 260px;
+    background: #F4F6F8;
+    border: 1px solid #D7DEE8;
+    border-radius: 4px;
+    padding: 12px 14px;
+}
+
+.standard-box span {
+    display: block;
+    color: #6B7280;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.standard-box strong {
+    color: #111827;
+    font-size: 13px;
+}
+
+/* =========================
+   ÁREA PRINCIPAL
+========================= */
+
+.workspace {
+    background: #FFFFFF;
+    border: 1px solid #CCD3DC;
+    border-radius: 6px;
+    padding: 24px;
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.05);
+}
+
+/* Títulos internos */
+.workspace h1 {
+    font-size: 25px;
+    color: #111827;
+    margin-top: 0;
+}
+
+.workspace h2 {
+    font-size: 21px;
+    color: #111827;
+}
+
+.workspace h3 {
+    font-size: 17px;
+    color: #111827;
+}
+
+/* =========================
+   COMPONENTES STREAMLIT
+========================= */
+
+div[data-testid="stButton"] button {
+    height: 40px;
+    border-radius: 4px;
+    font-weight: 600;
+    background: #2F5D8C;
+    color: #FFFFFF;
+    border: 1px solid #24496F;
+}
+
+div[data-testid="stButton"] button:hover {
+    background: #24496F;
+    color: #FFFFFF;
+    border-color: #1C3855;
+}
+
+div[data-testid="stAlert"] {
+    border-radius: 4px;
+    border: 1px solid #D1D5DB;
+}
+
+div[data-testid="metric-container"] {
+    background: #F4F6F8;
+    border: 1px solid #D7DEE8;
+    border-radius: 4px;
+    padding: 14px;
+}
+
+div[data-baseweb="select"] > div,
+input,
+textarea {
+    border-radius: 4px !important;
+}
+
+details {
+    border-radius: 4px !important;
+}
+
+/* Dataframes */
+div[data-testid="stDataFrame"] {
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+    .topbar {
+        display: block;
+    }
+
+    .standard-box {
+        margin-top: 14px;
+        min-width: auto;
+    }
+
+    .workspace {
+        padding: 16px;
+    }
+}
+/* =========================
+ TEXTO CONTEÚDO PRINCIPAL
+========================= */
+/* =========================
+   TEXTO DO CONTEÚDO PRINCIPAL
+========================= */
+
+/* Área principal, sem sidebar */
+section[data-testid="stMain"] p,
+section[data-testid="stMain"] span,
+section[data-testid="stMain"] label {
+    color: #1F2933 !important;
+}
+
+section[data-testid="stMain"] h1,
+section[data-testid="stMain"] h2,
+section[data-testid="stMain"] h3,
+section[data-testid="stMain"] h4 {
+    color: #111827 !important;
+}
+
+/* Labels dos inputs */
+section[data-testid="stMain"] div[data-testid="stWidgetLabel"] p,
+section[data-testid="stMain"] div[data-testid="stWidgetLabel"] label {
+    color: #374151 !important;
+}
+
+/* Métricas */
+section[data-testid="stMain"] div[data-testid="stMetric"] * {
+    color: #1F2933 !important;
+}
+
+/* Inputs continuam claros porque o campo é escuro */
+section[data-testid="stMain"] input {
+    color: #FFFFFF !important;
+}
+
+div[role="listbox"] {
+    min-height: 40px;
+}
+
+div[role="listbox"] * {
+    font-size: 0;
+}
+
+div[role="listbox"]::after {
+    content: "Sem mais opções disponíveis";
+    font-size: 13px;
+    color: #9CA3AF;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+button:has(span:contains("Clear")) span {
+    visibility: hidden;
+}
+
+button:has(span:contains("Clear"))::after {
+    content: "Limpar";
+}
